@@ -123,6 +123,7 @@ jobs:
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
+        sed -i '$a&i2c0 {\n        status = "okay";\n};' friendlywrt/build_dir/target-aarch64_cortex-a53_musl/linux-sunxi_cortexa53/linux-5.4.85/arch/arm64/boot/dts/allwinner/sun50i-h5-nanopi-neo2.dts/file
 
     - name: Compile 编译
       id: compile
