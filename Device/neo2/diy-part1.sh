@@ -15,4 +15,3 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-sed -i '$a&i2c0 {\n        status = "okay";\n};' friendlywrt/build_dir/target-aarch64_cortex-a53_musl/linux-sunxi_cortexa53/linux-5.4.85/arch/arm64/boot/dts/allwinner/sun50i-h5-nanopi-neo2.dts/file
